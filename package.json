@@ -1,0 +1,38 @@
+{
+  "name": "vadalio-worker",
+  "version": "1.0.0",
+  "description": "Vadal.io worker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadalio/worker.git"
+  },
+  "keywords": [
+    "vadalio",
+    "worker",
+    "run",
+    "script"
+  ],
+  "author": "Yacine Rezgui <rezgui.y@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/vadalio/worker/issues"
+  },
+  "homepage": "https://github.com/vadalio/worker#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "compression": "^1.6.0",
+    "cors": "^2.7.1",
+    "dotenv": "^1.2.0",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "jsonwebtoken": "^5.4.0",
+    "lodash": "^3.10.1",
+    "morgan": "^1.6.1",
+    "querystring": "^0.2.0",
+    "request": "^2.65.0"
+  }
+}
