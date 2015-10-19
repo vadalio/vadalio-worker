@@ -14,7 +14,7 @@ app.use(bodyParser.text());
 app.use(cors());
 
 function checkAuth (req, res, next) {
-  if (req.get('Authorization') && req.get('Authorization') === 'PAPANOMA') {
+  if (req.get('Authorization') && req.get('Authorization') === process.env.WORKER_MASTER_KEY) {
     next();
   } else {
     res.status(401).send('Authorization needed bro');
@@ -22,7 +22,7 @@ function checkAuth (req, res, next) {
 }
 
 app.get('/version', function(req, res) {
-  res.send('0.0.0-alpha');
+  res.send('0.1.0-alpha');
 });
 
 app.post('/run', checkAuth, function(req, res) {
