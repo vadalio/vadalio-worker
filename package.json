@@ -1,6 +1,6 @@
 {
   "name": "vadalio-worker",
-  "version": "1.0.0",
+  "version": "0.0.0-alpha",
   "description": "Vadal.io worker",
   "main": "index.js",
   "scripts": {

@@ -22,7 +22,7 @@ function checkAuth (req, res, next) {
 }
 
 app.get('/version', function(req, res) {
-  res.send('1.0.0-alpha');
+  res.send('0.0.0-alpha');
 });
 
 app.post('/run', checkAuth, function(req, res) {
